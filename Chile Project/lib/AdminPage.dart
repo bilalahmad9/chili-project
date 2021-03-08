@@ -124,14 +124,15 @@ class _AdminPageState extends State<AdminPage> {
                       child: Image.asset("assets/images/logo.png"),
                     ),
                   ),
-                  Container(
+                  /*Container(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height / 1.15,
                     color: Colors.black.withOpacity(0.45),
-                  ),
+                  ),*/
                   Container(
+                    height: MediaQuery.of(context).size.height / 1.2,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.white.withOpacity(0.8),
 
                     ),
                     child: FutureBuilder<Album>(
@@ -278,7 +279,7 @@ class _AdminPageState extends State<AdminPage> {
           padding: const EdgeInsets.only(left: 50.0, top: 15),
           child: Text(
              '   Hola $username, Bienvenido a la aplicación                  ',
-            style: TextStyle(fontSize: 15.0, color: Colors.white),
+            style: TextStyle(fontSize: 15.0),
           ),
         ),
         Text(
